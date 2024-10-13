@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>&#10005; Tic Tac Toe &#9711;</h1>
+    <p>Now turn: <span id="turn">&#9711;</span></p>
+    <div id="win">"<span id="who"></span>" won the game 🥳</div>
+    <table>
+        <tr>
+            <td id="topL" onclick="game('topL', 0)">&nbsp;</td>
+            <td id="topM" onclick="game('topM', 1)">&nbsp;</td>
+            <td id="topR" onclick="game('topR', 2)">&nbsp;</td>
+        </tr>
+        <tr>
+            <td id="Left" onclick="game('Left', 3)">&nbsp;</td>
+            <td id="Mid" onclick="game('Mid', 4)">&nbsp;</td>
+            <td id="Right" onclick="game('Right', 5)">&nbsp;</td>
+        </tr>
+        <tr>
+            <td id="botL" onclick="game('botL', 6)">&nbsp;</td>
+            <td id="botM" onclick="game('botM', 7)">&nbsp;</td>
+            <td id="botR" onclick="game('botR', 8)">&nbsp;</td>
+        </tr>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>
